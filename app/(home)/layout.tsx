@@ -1,4 +1,4 @@
-import { AppSidebar } from "@/components/app-sidebar";
+import { AppSidebar } from "@/components/nav-bar/app-sidebar";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -13,13 +13,12 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
-import { Children } from "react";
 
 export default function Layout({
-    children,
-  }: Readonly<{
-    children: React.ReactNode;
-  }>) {
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <SidebarProvider>
       <AppSidebar />

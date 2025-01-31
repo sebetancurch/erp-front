@@ -26,7 +26,7 @@ export function LoginForm({
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setIsLoading(true);
-    router.push("/dashboard");
+    router.push("/");
   }
 
   return (
